@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "userId": 101,
+        "businessName": "ACME Corporation",
+        "contactName": "Wile E. Coyote",
+        "businessPhone": "+18005550199",
+        "businessEmail": "contact@acme.com",
+        "businessAddress": "1 Desert Rd, Canyon, AZ",
+        "serviceArea": "Southwest USA",
+        "serviceType": "Catering, Event Planning",
+        "description": "Premier event catering and planning services in the Southwest. Over 30 years of experience delivering exceptional events.",
+        "website": "https://www.acme-catering.com",
+        "instagram": "@acmecatering",
+        "facebook": "facebook.com/acmecatering",
+        "linkedin": "linkedin.com/company/acme-catering",
+        "ratingAverage": 4.5,
+        "reviewCount": 127,
+        "listings": null
+    },
+    {
+        "id": 2,
+        "userId": 102,
+        "businessName": "Stark Industries Catering",
+        "contactName": "Tony Stark",
+        "businessPhone": "+12125551234",
+        "businessEmail": "info@stark.com",
+        "businessAddress": "Stark Tower, Manhattan, NY",
+        "serviceArea": "New York Metropolitan Area",
+        "serviceType": "Premium Catering, Corporate Events",
+        "description": "High-tech approach to fine dining and event management. Specializing in corporate events and luxury gatherings.",
+        "website": "https://www.starkindustries.com/catering",
+        "instagram": "@starkcatering",
+        "facebook": "facebook.com/starkindustriescatering",
+        "linkedin": "linkedin.com/company/stark-industries",
+        "ratingAverage": 4.8,
+        "reviewCount": 89,
+        "listings": null
+    }
+]

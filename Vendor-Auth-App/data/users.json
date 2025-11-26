@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "fullName": "John Doe",
+        "email": "john.doe@example.com",
+        "passwordHash": "$2b$10$EixZaYVK1fsbw1ZfbX3OXePaWxwKc.6I1.1/z1.1",
+        "phone": "+1234567890",
+        "address": "123 Main St, Springfield, IL",
+        "role": "Customer",
+        "createdAt": "2023-01-15T10:00:00Z"
+    },
+    {
+        "id": 2,
+        "fullName": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "passwordHash": "$2b$10$9876543210zyxwvutsrqponmlkjihgfedcba",
+        "phone": "+10987654321",
+        "address": "456 Oak Ave, Metropolis, NY",
+        "role": "Customer",
+        "createdAt": "2023-02-20T14:30:00Z"
+    },
+    {
+        "id": 101,
+        "fullName": "Wile E. Coyote",
+        "email": "contact@acme.com",
+        "passwordHash": "$2b$10$9876543210zyxwvutsrqponmlkjihgfedcba",
+        "phone": "+18005550199",
+        "address": "1 Desert Rd, Canyon, AZ",
+        "role": "Vendor",
+        "createdAt": "2022-11-05T09:15:00Z"
+    },
+    {
+        "id": 102,
+        "fullName": "Tony Stark",
+        "email": "info@stark.com",
+        "passwordHash": "$2b$10$abcdefghijklmnopqrstuvwxyz",
+        "phone": "+12125551234",
+        "address": "Stark Tower, Manhattan, NY",
+        "role": "Vendor",
+        "createdAt": "2022-12-10T11:45:00Z"
+    },
+    {
+        "id": 3,
+        "fullName": "Alice Johnson",
+        "email": "alice.j@example.com",
+        "passwordHash": "$2b$10$xyz123abc456def789ghi012jkl345mno",
+        "phone": "+15551234567",
+        "address": "789 Pine Lane, Smallville, KS",
+        "role": "Customer",
+        "createdAt": "2023-03-15T08:20:00Z"
+    }
+]
