@@ -1,0 +1,27 @@
+### Search Vendors - All
+GET http://127.0.0.1:8000/api/Vendors/searchall
+
+###
+
+### Search Vendors - By City
+GET http://127.0.0.1:8000/api/Vendors/searchall?city=Toronto
+
+###
+
+### Search Vendors - By Text
+GET http://127.0.0.1:8000/api/Vendors/searchall?searchText=catering
+
+###
+
+### Search Vendors - With Active Offers
+GET http://127.0.0.1:8000/api/Vendors/searchall?isOffer=true
+
+###
+
+### Search Vendors - Favorites (requires userId)
+GET http://127.0.0.1:8000/api/Vendors/searchall?userId=1&isFavorite=true
+
+###
+
+### Search Vendors - Combined Filters
+GET http://127.0.0.1:8000/api/Vendors/searchall?city=Toronto&searchText=italian&userId=1

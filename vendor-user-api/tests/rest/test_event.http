@@ -1,0 +1,13 @@
+### IMPORTANT: No spaces after "Authorization"!
+### Correct format: "Authorization: Bearer TOKEN"
+### Wrong format: "Authorization : Bearer TOKEN" (space before colon)
+### Wrong format: "Authorization: Bearer TOKEN " (trailing space)
+
+### Get Single Event - WORKING EXAMPLE
+GET http://127.0.0.1:8000/api/events/1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA1NTU1LCJleHAiOjE3NjQxMDkxNTUsIm5iZiI6MTc2NDEwNTU1NSwianRpIjoiQWJYRjVCWWRtWHVPZGNYcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gVXBkYXRlZCIsImVtYWlsIjoiam9obkBleGFtcGxlLmNvbSIsInJvbGUiOiJDdXN0b21lciJ9.PLACEHOLDER
+
+###
+
+### Alternative: Use curl
+### curl -H "Authorization: Bearer YOUR_TOKEN" http://127.0.0.1:8000/api/events/1

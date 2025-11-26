@@ -1,0 +1,58 @@
+### Get All Events (Admin)
+GET http://127.0.0.1:8000/api/events
+Authorization: Bearer YOUR_TOKEN_HERE
+
+###
+
+### Get User Events
+GET http://127.0.0.1:8000/api/events/user/1
+Authorization: Bearer YOUR_TOKEN_HERE
+
+###
+
+### Get Vendor Events
+GET http://127.0.0.1:8000/api/events/vendor/1
+Authorization: Bearer YOUR_TOKEN_HERE
+
+###
+
+### Get Single Event
+GET http://127.0.0.1:8000/api/events/1
+Authorization: Bearer YOUR_TOKEN_HERE
+
+###
+
+### Create Event
+POST http://127.0.0.1:8000/api/events
+Authorization: Bearer YOUR_TOKEN_HERE
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "vendor_id": 1,
+  "eventType": "Wedding",
+  "eventDate": "2025-12-25",
+  "description": "Christmas wedding celebration",
+  "dietaryRestrictions": "Vegetarian options needed",
+  "budgetMin": 5000,
+  "budgetMax": 10000
+}
+
+###
+
+### Update Event
+PUT http://127.0.0.1:8000/api/events/1
+Authorization: Bearer YOUR_TOKEN_HERE
+Content-Type: application/json
+
+{
+  "eventDate": "2025-12-26",
+  "description": "Updated wedding date",
+  "budgetMax": 12000
+}
+
+###
+
+### Delete Event
+DELETE http://127.0.0.1:8000/api/events/1
+Authorization: Bearer YOUR_TOKEN_HERE

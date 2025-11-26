@@ -1,0 +1,1156 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "id": "b74bc9d9-88f5-4c99-acfc-776d42a54cee",
+      "collectionId": "",
+      "name": "VendorApp",
+      "description": "",
+      "deleted": false,
+      "type": "collection",
+      "data": {
+        "variables": {},
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        }
+      }
+    },
+    {
+      "id": "bc285d91-ff91-40c0-a568-f3670b6d58c3",
+      "collectionId": "b74bc9d9-88f5-4c99-acfc-776d42a54cee",
+      "name": "Customer-Operation",
+      "description": "",
+      "deleted": false,
+      "type": "collection",
+      "data": {
+        "variables": {},
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        }
+      }
+    },
+    {
+      "id": "85d1737c-e185-4307-9759-808ce5c66005",
+      "collectionId": "bc285d91-ff91-40c0-a568-f3670b6d58c3",
+      "name": "delete-user",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://localhost:8000/api/Users/1",
+          "queryParams": [],
+          "method": "DELETE",
+          "headers": [
+            {
+              "id": 1764103784159,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTAzNTYyLCJleHAiOjE3NjQxMDcxNjIsIm5iZiI6MTc2NDEwMzU2MiwianRpIjoiTGFYY0QyMEx3cVBzN1BMYiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwicm9sZSI6IkN1c3RvbWVyIn0.3sqe9N-yzeeGXsoB5-LRaLHjDkHexq0s1Lm1ka8ntRI",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "479f7c51-2199-46cb-85bb-e2f4e7c5b147",
+      "collectionId": "bc285d91-ff91-40c0-a568-f3670b6d58c3",
+      "name": "get-all-users",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://localhost:8000/api/Users",
+          "queryParams": [],
+          "method": "GET",
+          "headers": [
+            {
+              "id": 1764103572404,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTAzNTYyLCJleHAiOjE3NjQxMDcxNjIsIm5iZiI6MTc2NDEwMzU2MiwianRpIjoiTGFYY0QyMEx3cVBzN1BMYiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwicm9sZSI6IkN1c3RvbWVyIn0.3sqe9N-yzeeGXsoB5-LRaLHjDkHexq0s1Lm1ka8ntRI",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "61b83d82-f99b-4864-ac0b-c6b8706c03b7",
+      "collectionId": "bc285d91-ff91-40c0-a568-f3670b6d58c3",
+      "name": "get-user-by-id",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://localhost:8000/api/Users/1",
+          "queryParams": [],
+          "method": "GET",
+          "headers": [
+            {
+              "id": 1764103650867,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTAzNTYyLCJleHAiOjE3NjQxMDcxNjIsIm5iZiI6MTc2NDEwMzU2MiwianRpIjoiTGFYY0QyMEx3cVBzN1BMYiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwicm9sZSI6IkN1c3RvbWVyIn0.3sqe9N-yzeeGXsoB5-LRaLHjDkHexq0s1Lm1ka8ntRI",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "54ea0958-4bc7-4c31-a7fb-fe72eb43fb84",
+      "collectionId": "bc285d91-ff91-40c0-a568-f3670b6d58c3",
+      "name": "update-user",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://localhost:8000/api/Users/1",
+          "queryParams": [],
+          "method": "PUT",
+          "headers": [
+            {
+              "id": 1764103706115,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTAzNTYyLCJleHAiOjE3NjQxMDcxNjIsIm5iZiI6MTc2NDEwMzU2MiwianRpIjoiTGFYY0QyMEx3cVBzN1BMYiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwicm9sZSI6IkN1c3RvbWVyIn0.3sqe9N-yzeeGXsoB5-LRaLHjDkHexq0s1Lm1ka8ntRI",
+              "isEnabled": true
+            }
+          ],
+          "body": "{\n  \"fullName\": \"John Updated\",\n  \"phone\": \"9876543210\",\n  \"address\": \"456 New St\"\n}",
+          "bodyContainer": {
+            "text": "{\n  \"fullName\": \"John Updated\",\n  \"phone\": \"9876543210\",\n  \"address\": \"456 New St\"\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "f9776ef3-18bc-497a-b2ff-dd2a3a55beed",
+      "collectionId": "b74bc9d9-88f5-4c99-acfc-776d42a54cee",
+      "name": "Customer-Request",
+      "description": "",
+      "deleted": false,
+      "type": "collection",
+      "data": {
+        "variables": {},
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        }
+      }
+    },
+    {
+      "id": "a67c6aab-577b-43bc-96be-9a48b405400b",
+      "collectionId": "f9776ef3-18bc-497a-b2ff-dd2a3a55beed",
+      "name": "bearer-token",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://127.0.0.1:8000/api/me",
+          "queryParams": [],
+          "method": "GET",
+          "headers": [
+            {
+              "id": 1764103242166,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA0NjgxLCJleHAiOjE3NjQxMDgyODEsIm5iZiI6MTc2NDEwNDY4MSwianRpIjoiT1MzY0FBUDg3blk5QTdtUSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.JGdjB4z7XQOPqEh5E4FCfIIhLRvWb2zr8ZSdpAenlf8",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "fd2ecbd4-5dbb-45ec-8ee1-0394aead3deb",
+      "collectionId": "f9776ef3-18bc-497a-b2ff-dd2a3a55beed",
+      "name": "customer-login",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://127.0.0.1:8000/api/Users/login",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1764103363637,
+              "key": "",
+              "value": "",
+              "isEnabled": false
+            }
+          ],
+          "body": "{\n  \"email\": \"joh2n@example.com\",\n  \"password\": \"password1234\"\n}",
+          "bodyContainer": {
+            "text": "{\n  \"email\": \"joh2n@example.com\",\n  \"password\": \"password1234\"\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "ebd21fce-e762-464a-8134-f82f0e54a3cd",
+      "collectionId": "f9776ef3-18bc-497a-b2ff-dd2a3a55beed",
+      "name": "customer-logout",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://127.0.0.1:8000/api/logout",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1764103360796,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTAzMDc4LCJleHAiOjE3NjQxMDY2NzgsIm5iZiI6MTc2NDEwMzA3OCwianRpIjoic1l0UkFhVTgxY2RuVXQ1dSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwicm9sZSI6IkN1c3RvbWVyIn0.wkPVtaGoFefvJnGYaxxieA2kxROKm9idAVRXYiIhm6Y",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "afc44b37-3ed2-4177-b507-6656cd2bb149",
+      "collectionId": "f9776ef3-18bc-497a-b2ff-dd2a3a55beed",
+      "name": "customer-register",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://127.0.0.1:8000/api/Users/register",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [],
+          "body": "{\n  \"fullName\": \"John Doe2\",\n  \"email\": \"joh2n@example.com\",\n  \"password\": \"password1234\",\n  \"phone\": \"1234567890\",\n  \"address\": \"123 Main St\",\n  \"role\": \"Customer\",\n  \"area\": \"Downtown\"\n}",
+          "bodyContainer": {
+            "text": "{\n  \"fullName\": \"John Doe2\",\n  \"email\": \"joh2n@example.com\",\n  \"password\": \"password1234\",\n  \"phone\": \"1234567890\",\n  \"address\": \"123 Main St\",\n  \"role\": \"Customer\",\n  \"area\": \"Downtown\"\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "4c3a9cb0-905d-404f-81bc-400ed9a992d8",
+      "collectionId": "b74bc9d9-88f5-4c99-acfc-776d42a54cee",
+      "name": "Event-Operations",
+      "description": "",
+      "deleted": false,
+      "type": "collection",
+      "data": {
+        "variables": {},
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        }
+      }
+    },
+    {
+      "id": "d7b64015-1028-47b5-a6bd-f7fa796a8b58",
+      "collectionId": "4c3a9cb0-905d-404f-81bc-400ed9a992d8",
+      "name": "create-event",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://localhost:8000/api/events",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1764106361250,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA0NjgxLCJleHAiOjE3NjQxMDgyODEsIm5iZiI6MTc2NDEwNDY4MSwianRpIjoiT1MzY0FBUDg3blk5QTdtUSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.JGdjB4z7XQOPqEh5E4FCfIIhLRvWb2zr8ZSdpAenlf8",
+              "isEnabled": true
+            }
+          ],
+          "body": "{\n  \"user_id\": 2,\n  \"vendor_id\": 1,\n  \"eventType\": \"Wedding\",\n  \"eventDate\": \"2025-12-25\",\n  \"description\": \"Christmas wedding celebration\",\n  \"dietaryRestrictions\": \"Vegetarian options needed\",\n  \"budgetMin\": 5000,\n  \"budgetMax\": 10000\n}",
+          "bodyContainer": {
+            "text": "{\n  \"user_id\": 2,\n  \"vendor_id\": 1,\n  \"eventType\": \"Wedding\",\n  \"eventDate\": \"2025-12-25\",\n  \"description\": \"Christmas wedding celebration\",\n  \"dietaryRestrictions\": \"Vegetarian options needed\",\n  \"budgetMin\": 5000,\n  \"budgetMax\": 10000\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "5ea67bd6-5fa7-4387-a1dc-3437112b63d2",
+      "collectionId": "4c3a9cb0-905d-404f-81bc-400ed9a992d8",
+      "name": "delete-event",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://127.0.0.1:8000/api/events/1",
+          "queryParams": [],
+          "method": "DELETE",
+          "headers": [
+            {
+              "id": 1764107121050,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA3MDY2LCJleHAiOjE3NjQxMTA2NjYsIm5iZiI6MTc2NDEwNzA2NiwianRpIjoiUGc1OUE5cFcxOWFtdlJEVyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.rZ9DKhpg8z7nOhk5G4IrMlYQKmO_UfJPp8YtJ9zyqHk",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "cea42add-dc98-4ba5-90e1-79016c3d796d",
+      "collectionId": "4c3a9cb0-905d-404f-81bc-400ed9a992d8",
+      "name": "get-event-by-id",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://127.0.0.1:8000/api/events/1",
+          "queryParams": [],
+          "method": "GET",
+          "headers": [
+            {
+              "id": 1764106934312,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA2Njk3LCJleHAiOjE3NjQxMTAyOTcsIm5iZiI6MTc2NDEwNjY5NywianRpIjoiaXVzVzd3WWVGdjZaUkxzdSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gVXBkYXRlZCIsImVtYWlsIjoiam9obkBleGFtcGxlLmNvbSIsInJvbGUiOiJDdXN0b21lciJ9.yyEpfvVFRh_aDmFBF3fVx9SuaAAC_IIMUCFEhYcQrhY",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "ce5a25c5-a271-4772-93d5-abb0a60fff8e",
+      "collectionId": "4c3a9cb0-905d-404f-81bc-400ed9a992d8",
+      "name": "get-events",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://127.0.0.1:8000/api/events/user/2",
+          "queryParams": [],
+          "method": "GET",
+          "headers": [
+            {
+              "id": 1764106789982,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA3MDY2LCJleHAiOjE3NjQxMTA2NjYsIm5iZiI6MTc2NDEwNzA2NiwianRpIjoiUGc1OUE5cFcxOWFtdlJEVyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.rZ9DKhpg8z7nOhk5G4IrMlYQKmO_UfJPp8YtJ9zyqHk",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "6f6f1c49-4713-4edd-adcb-58ddfe90c43e",
+      "collectionId": "4c3a9cb0-905d-404f-81bc-400ed9a992d8",
+      "name": "get-vendor-events",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://127.0.0.1:8000/api/events/vendor/1",
+          "queryParams": [],
+          "method": "GET",
+          "headers": [
+            {
+              "id": 1764106848443,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA2Njk3LCJleHAiOjE3NjQxMTAyOTcsIm5iZiI6MTc2NDEwNjY5NywianRpIjoiaXVzVzd3WWVGdjZaUkxzdSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gVXBkYXRlZCIsImVtYWlsIjoiam9obkBleGFtcGxlLmNvbSIsInJvbGUiOiJDdXN0b21lciJ9.yyEpfvVFRh_aDmFBF3fVx9SuaAAC_IIMUCFEhYcQrhY",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "f2ea6450-ca19-4c9a-b8ef-7951a55236df",
+      "collectionId": "4c3a9cb0-905d-404f-81bc-400ed9a992d8",
+      "name": "update-event ",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://127.0.0.1:8000/api/events/1",
+          "queryParams": [],
+          "method": "PUT",
+          "headers": [
+            {
+              "id": 1764107015101,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA3MDY2LCJleHAiOjE3NjQxMTA2NjYsIm5iZiI6MTc2NDEwNzA2NiwianRpIjoiUGc1OUE5cFcxOWFtdlJEVyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.rZ9DKhpg8z7nOhk5G4IrMlYQKmO_UfJPp8YtJ9zyqHk",
+              "isEnabled": true
+            }
+          ],
+          "body": "{\n  \"eventDate\": \"2025-12-26\",\n  \"description\": \"Updated wedding date\",\n  \"budgetMax\": 12000\n}",
+          "bodyContainer": {
+            "text": "{\n  \"eventDate\": \"2025-12-26\",\n  \"description\": \"Updated wedding date\",\n  \"budgetMax\": 12000\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "53af7875-18e6-4cf0-9375-544b1c65ddc0",
+      "collectionId": "b74bc9d9-88f5-4c99-acfc-776d42a54cee",
+      "name": "Message-Operation",
+      "description": "",
+      "deleted": false,
+      "type": "collection",
+      "data": {
+        "variables": {},
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        }
+      }
+    },
+    {
+      "id": "b21828cc-dba4-47ce-847b-0247a6d2b9f9",
+      "collectionId": "53af7875-18e6-4cf0-9375-544b1c65ddc0",
+      "name": "get-all-chats",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://localhost:8000/api/messages/conversation/2/1",
+          "queryParams": [],
+          "method": "GET",
+          "headers": [
+            {
+              "id": 1764105082388,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA0NjgxLCJleHAiOjE3NjQxMDgyODEsIm5iZiI6MTc2NDEwNDY4MSwianRpIjoiT1MzY0FBUDg3blk5QTdtUSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.JGdjB4z7XQOPqEh5E4FCfIIhLRvWb2zr8ZSdpAenlf8",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "f7a1dddf-1171-44fc-9b94-108b69dc5b49",
+      "collectionId": "53af7875-18e6-4cf0-9375-544b1c65ddc0",
+      "name": "get-chat-user",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "https://app.requestly.io/echo",
+          "queryParams": [],
+          "method": "GET",
+          "headers": [],
+          "body": null,
+          "contentType": "text/plain"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "a6c9b003-efef-4d3b-9f08-df2db8ff8a4d",
+      "collectionId": "53af7875-18e6-4cf0-9375-544b1c65ddc0",
+      "name": "message-send",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://localhost:8000/api/messages/send",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1764104940436,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA0NjgxLCJleHAiOjE3NjQxMDgyODEsIm5iZiI6MTc2NDEwNDY4MSwianRpIjoiT1MzY0FBUDg3blk5QTdtUSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.JGdjB4z7XQOPqEh5E4FCfIIhLRvWb2zr8ZSdpAenlf8",
+              "isEnabled": true
+            }
+          ],
+          "body": "{\n  \"senderId\": 2,\n  \"receiverId\": 1,\n  \"message\": \"Hello, I'm interested in your services!\"\n}",
+          "bodyContainer": {
+            "text": "{\n  \"senderId\": 2,\n  \"receiverId\": 1,\n  \"message\": \"Hello, I'm interested in your services!\"\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "5e088059-99dd-4c01-908b-a4da6733ea42",
+      "collectionId": "b74bc9d9-88f5-4c99-acfc-776d42a54cee",
+      "name": "Notification",
+      "description": "",
+      "deleted": false,
+      "type": "collection",
+      "data": {
+        "variables": {},
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        }
+      }
+    },
+    {
+      "id": "f98619c6-0281-4fe1-b732-564d4e46a50d",
+      "collectionId": "5e088059-99dd-4c01-908b-a4da6733ea42",
+      "name": "get-notification",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://127.0.0.1:8000/api/notifications/2",
+          "queryParams": [],
+          "method": "GET",
+          "headers": [
+            {
+              "id": 1764107278397,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA3MDY2LCJleHAiOjE3NjQxMTA2NjYsIm5iZiI6MTc2NDEwNzA2NiwianRpIjoiUGc1OUE5cFcxOWFtdlJEVyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.rZ9DKhpg8z7nOhk5G4IrMlYQKmO_UfJPp8YtJ9zyqHk",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": {
+          "body": "[{\"id\":1,\"user_id\":2,\"fullName\":\"John Doe2\",\"eventType\":\"Wedding\",\"eventDate\":\"2025-12-26 00:00:00\",\"vendor_id\":1,\"businessName\":\"Updated Catering Co\",\"rating\":4.5,\"title\":\"Great service!\",\"comment\":\"The catering was excellent and professional.\",\"created_at\":\"2025-11-25 21:46:50\"}]",
+          "time": 36.76069999858737,
+          "headers": [
+            {
+              "key": "host",
+              "value": "127.0.0.1:8000"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "PHP/8.5.0"
+            },
+            {
+              "key": "cache-control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 25 Nov 2025 21:48:24 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "transfer-encoding",
+              "value": "chunked"
+            }
+          ],
+          "status": 200,
+          "statusText": "OK",
+          "redirectedUrl": ""
+        },
+        "testResults": []
+      }
+    },
+    {
+      "id": "43720849-e054-4a20-b6b8-be5370d16794",
+      "collectionId": "b74bc9d9-88f5-4c99-acfc-776d42a54cee",
+      "name": "Review-Endpoints",
+      "description": "",
+      "deleted": false,
+      "type": "collection",
+      "data": {
+        "variables": {},
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        }
+      }
+    },
+    {
+      "id": "b8012efc-6e4c-4d21-abb7-26d4722d39e8",
+      "collectionId": "43720849-e054-4a20-b6b8-be5370d16794",
+      "name": "get-reviews-by-id",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://localhost:8000/api/reviews/event/1",
+          "queryParams": [],
+          "method": "GET",
+          "headers": [
+            {
+              "id": 1764107226525,
+              "key": "",
+              "value": "",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "b6a603f5-8704-47e3-ad37-6ee7561008ea",
+      "collectionId": "43720849-e054-4a20-b6b8-be5370d16794",
+      "name": "save-review",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://127.0.0.1:8000/api/reviews",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1764107166983,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA3MDY2LCJleHAiOjE3NjQxMTA2NjYsIm5iZiI6MTc2NDEwNzA2NiwianRpIjoiUGc1OUE5cFcxOWFtdlJEVyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.rZ9DKhpg8z7nOhk5G4IrMlYQKmO_UfJPp8YtJ9zyqHk",
+              "isEnabled": true
+            }
+          ],
+          "body": "{\n  \"eventId\": 1,\n  \"rating\": 4.5,\n  \"title\": \"Great service!\",\n  \"comment\": \"The catering was excellent and professional.\"\n}",
+          "bodyContainer": {
+            "text": "{\n  \"eventId\": 1,\n  \"rating\": 4.5,\n  \"title\": \"Great service!\",\n  \"comment\": \"The catering was excellent and professional.\"\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "3c0b68e7-9a5b-4c63-a608-eccef80d7c4d",
+      "collectionId": "b74bc9d9-88f5-4c99-acfc-776d42a54cee",
+      "name": "Vendor-Operation",
+      "description": "",
+      "deleted": false,
+      "type": "collection",
+      "data": {
+        "variables": {},
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        }
+      }
+    },
+    {
+      "id": "9efba2db-933b-4fd3-89c7-7be938465790",
+      "collectionId": "3c0b68e7-9a5b-4c63-a608-eccef80d7c4d",
+      "name": "add-favorite-vendor",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://localhost:8000/api/Vendors/favorite",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1764104572737,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA0NjgxLCJleHAiOjE3NjQxMDgyODEsIm5iZiI6MTc2NDEwNDY4MSwianRpIjoiT1MzY0FBUDg3blk5QTdtUSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.JGdjB4z7XQOPqEh5E4FCfIIhLRvWb2zr8ZSdpAenlf8",
+              "isEnabled": true
+            }
+          ],
+          "body": "{\n  \"userId\": 2,\n  \"vendorId\": 1\n}",
+          "bodyContainer": {
+            "text": "{\n  \"userId\": 2,\n  \"vendorId\": 1\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "5d2d1bf3-13a0-4a28-94a6-bf2a970729a0",
+      "collectionId": "3c0b68e7-9a5b-4c63-a608-eccef80d7c4d",
+      "name": "create-vendor",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://localhost:8000/api/Vendors/byUser/1",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1764103904294,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTAzNTYyLCJleHAiOjE3NjQxMDcxNjIsIm5iZiI6MTc2NDEwMzU2MiwianRpIjoiTGFYY0QyMEx3cVBzN1BMYiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwicm9sZSI6IkN1c3RvbWVyIn0.3sqe9N-yzeeGXsoB5-LRaLHjDkHexq0s1Lm1ka8ntRI",
+              "isEnabled": true
+            }
+          ],
+          "body": "{\n  \"businessName\": \"Catering Co\",\n  \"contactName\": \"Jane Smith\",\n  \"businessPhone\": \"555-1234\",\n  \"businessEmail\": \"info@cateringco.com\",\n  \"businessAddress\": \"789 Business Ave\",\n  \"serviceArea\": \"Toronto\",\n  \"serviceType\": \"Catering\",\n  \"cuisineStyle\": \"Italian\",\n  \"description\": \"Premium catering services\",\n  \"website\": \"https://cateringco.com\",\n  \"instagram\": \"@cateringco\",\n  \"facebook\": \"cateringco\"\n}",
+          "bodyContainer": {
+            "text": "{\n  \"businessName\": \"Catering Co\",\n  \"contactName\": \"Jane Smith\",\n  \"businessPhone\": \"555-1234\",\n  \"businessEmail\": \"info@cateringco.com\",\n  \"businessAddress\": \"789 Business Ave\",\n  \"serviceArea\": \"Toronto\",\n  \"serviceType\": \"Catering\",\n  \"cuisineStyle\": \"Italian\",\n  \"description\": \"Premium catering services\",\n  \"website\": \"https://cateringco.com\",\n  \"instagram\": \"@cateringco\",\n  \"facebook\": \"cateringco\"\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "58d6b099-159c-48ee-98f5-81057db2c1ab",
+      "collectionId": "3c0b68e7-9a5b-4c63-a608-eccef80d7c4d",
+      "name": "delete-favorites",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://localhost:8000/api/Vendors/favorite",
+          "queryParams": [
+            {
+              "id": 0.4807271943617015,
+              "key": "userId",
+              "value": "1",
+              "isEnabled": true
+            },
+            {
+              "id": 0.7517554119701304,
+              "key": "vendorId1",
+              "value": "",
+              "isEnabled": true
+            }
+          ],
+          "method": "DELETE",
+          "headers": [
+            {
+              "id": 1764104783557,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA0NjgxLCJleHAiOjE3NjQxMDgyODEsIm5iZiI6MTc2NDEwNDY4MSwianRpIjoiT1MzY0FBUDg3blk5QTdtUSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.JGdjB4z7XQOPqEh5E4FCfIIhLRvWb2zr8ZSdpAenlf8",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "43990c37-7875-4c72-ac2a-1ddc791283be",
+      "collectionId": "3c0b68e7-9a5b-4c63-a608-eccef80d7c4d",
+      "name": "delete-vendor",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://localhost:8000/api/Vendors/1",
+          "queryParams": [],
+          "method": "DELETE",
+          "headers": [
+            {
+              "id": 1764104311190,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTAzNTYyLCJleHAiOjE3NjQxMDcxNjIsIm5iZiI6MTc2NDEwMzU2MiwianRpIjoiTGFYY0QyMEx3cVBzN1BMYiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwicm9sZSI6IkN1c3RvbWVyIn0.3sqe9N-yzeeGXsoB5-LRaLHjDkHexq0s1Lm1ka8ntRI",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "18e21aff-86d5-4ffb-9f67-2790fd4cb4a3",
+      "collectionId": "3c0b68e7-9a5b-4c63-a608-eccef80d7c4d",
+      "name": "search-vendor",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://127.0.0.1:8000/api/Vendors/searchall",
+          "queryParams": [
+            {
+              "id": 0.14925812250445936,
+              "key": "city",
+              "value": "Toronto",
+              "isEnabled": true
+            }
+          ],
+          "method": "GET",
+          "headers": [
+            {
+              "id": 1764104385935,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTAzNTYyLCJleHAiOjE3NjQxMDcxNjIsIm5iZiI6MTc2NDEwMzU2MiwianRpIjoiTGFYY0QyMEx3cVBzN1BMYiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwicm9sZSI6IkN1c3RvbWVyIn0.3sqe9N-yzeeGXsoB5-LRaLHjDkHexq0s1Lm1ka8ntRI",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "44cf2b20-8767-413e-85db-dc0f21b9e08d",
+      "collectionId": "3c0b68e7-9a5b-4c63-a608-eccef80d7c4d",
+      "name": "update-vendor",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "http://localhost:8000/api/Vendors/1",
+          "queryParams": [],
+          "method": "PUT",
+          "headers": [
+            {
+              "id": 1764103977543,
+              "key": "Authorization",
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTAzNTYyLCJleHAiOjE3NjQxMDcxNjIsIm5iZiI6MTc2NDEwMzU2MiwianRpIjoiTGFYY0QyMEx3cVBzN1BMYiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwicm9sZSI6IkN1c3RvbWVyIn0.3sqe9N-yzeeGXsoB5-LRaLHjDkHexq0s1Lm1ka8ntRI",
+              "isEnabled": true
+            }
+          ],
+          "body": "{\n  \"businessName\": \"Updated Catering Co\",\n  \"description\": \"New description\"\n}",
+          "bodyContainer": {
+            "text": "{\n  \"businessName\": \"Updated Catering Co\",\n  \"description\": \"New description\"\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json",
+          "pathVariables": []
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    }
+  ]
+}

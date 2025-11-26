@@ -1,0 +1,12 @@
+POST /api/Users/register
+Content-Type: application/json
+
+{
+  "fullName": "John Doe",
+  "email": "john@example.com",
+  "password": "password123",
+  "phone": "1234567890",
+  "address": "123 Main St",
+  "role": "Customer",
+  "area": "Downtown"
+}

@@ -1,0 +1,944 @@
+{
+  "info": {
+    "_postman_id": "48285def-2ca9-4cf8-a0d0-e5da366c05f9",
+    "name": "VendorApp",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "id": "d7dd0164-5dbe-4bf2-b2a8-7dacacc5ce79",
+      "name": "Customer-Operation",
+      "item": [
+        {
+          "id": "84010ca4-58d5-4103-b507-07667431fe44",
+          "name": "delete-user",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTAzNTYyLCJleHAiOjE3NjQxMDcxNjIsIm5iZiI6MTc2NDEwMzU2MiwianRpIjoiTGFYY0QyMEx3cVBzN1BMYiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwicm9sZSI6IkN1c3RvbWVyIn0.3sqe9N-yzeeGXsoB5-LRaLHjDkHexq0s1Lm1ka8ntRI",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/Users/1",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "Users",
+                "1"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "644910fd-5e6b-4ed4-a748-f1d18f076be9",
+          "name": "get-all-users",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTAzNTYyLCJleHAiOjE3NjQxMDcxNjIsIm5iZiI6MTc2NDEwMzU2MiwianRpIjoiTGFYY0QyMEx3cVBzN1BMYiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwicm9sZSI6IkN1c3RvbWVyIn0.3sqe9N-yzeeGXsoB5-LRaLHjDkHexq0s1Lm1ka8ntRI",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/Users",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "Users"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "6fae7322-54b6-49ad-ad91-7a6d1f10254e",
+          "name": "get-user-by-id",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTAzNTYyLCJleHAiOjE3NjQxMDcxNjIsIm5iZiI6MTc2NDEwMzU2MiwianRpIjoiTGFYY0QyMEx3cVBzN1BMYiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwicm9sZSI6IkN1c3RvbWVyIn0.3sqe9N-yzeeGXsoB5-LRaLHjDkHexq0s1Lm1ka8ntRI",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/Users/1",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "Users",
+                "1"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "43bb10f6-a566-431f-b40c-8c76086b2914",
+          "name": "update-user",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTAzNTYyLCJleHAiOjE3NjQxMDcxNjIsIm5iZiI6MTc2NDEwMzU2MiwianRpIjoiTGFYY0QyMEx3cVBzN1BMYiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwicm9sZSI6IkN1c3RvbWVyIn0.3sqe9N-yzeeGXsoB5-LRaLHjDkHexq0s1Lm1ka8ntRI",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fullName\": \"John Updated\",\n  \"phone\": \"9876543210\",\n  \"address\": \"456 New St\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/Users/1",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "Users",
+                "1"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        }
+      ],
+      "variable": []
+    },
+    {
+      "id": "66671c20-c82a-4cf8-a2ec-a0b0b4574b2c",
+      "name": "Customer-Request",
+      "item": [
+        {
+          "id": "2e8610ff-abde-46fb-805b-0729b31d2df5",
+          "name": "bearer-token",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA0NjgxLCJleHAiOjE3NjQxMDgyODEsIm5iZiI6MTc2NDEwNDY4MSwianRpIjoiT1MzY0FBUDg3blk5QTdtUSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.JGdjB4z7XQOPqEh5E4FCfIIhLRvWb2zr8ZSdpAenlf8",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/me",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "path": [
+                "api",
+                "me"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "147fde89-8b89-488d-86ea-1f6231cd4d4b",
+          "name": "customer-login",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "",
+                "value": "",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"joh2n@example.com\",\n  \"password\": \"password1234\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/Users/login",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "path": [
+                "api",
+                "Users",
+                "login"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "c56c0e8b-7e8a-4791-866b-7597463633d4",
+          "name": "customer-logout",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTAzMDc4LCJleHAiOjE3NjQxMDY2NzgsIm5iZiI6MTc2NDEwMzA3OCwianRpIjoic1l0UkFhVTgxY2RuVXQ1dSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwicm9sZSI6IkN1c3RvbWVyIn0.wkPVtaGoFefvJnGYaxxieA2kxROKm9idAVRXYiIhm6Y",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/logout",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "path": [
+                "api",
+                "logout"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "5032c81b-4476-47f7-af0f-4eea12895828",
+          "name": "customer-register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fullName\": \"John Doe2\",\n  \"email\": \"joh2n@example.com\",\n  \"password\": \"password1234\",\n  \"phone\": \"1234567890\",\n  \"address\": \"123 Main St\",\n  \"role\": \"Customer\",\n  \"area\": \"Downtown\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/Users/register",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "path": [
+                "api",
+                "Users",
+                "register"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        }
+      ],
+      "variable": []
+    },
+    {
+      "id": "de5b0fc0-946c-4b0f-95b1-c9cd65f85990",
+      "name": "Event-Operations",
+      "item": [
+        {
+          "id": "16d9fe3e-00a3-495c-b75f-a4f6074fc3fa",
+          "name": "create-event",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA0NjgxLCJleHAiOjE3NjQxMDgyODEsIm5iZiI6MTc2NDEwNDY4MSwianRpIjoiT1MzY0FBUDg3blk5QTdtUSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.JGdjB4z7XQOPqEh5E4FCfIIhLRvWb2zr8ZSdpAenlf8",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"user_id\": 2,\n  \"vendor_id\": 1,\n  \"eventType\": \"Wedding\",\n  \"eventDate\": \"2025-12-25\",\n  \"description\": \"Christmas wedding celebration\",\n  \"dietaryRestrictions\": \"Vegetarian options needed\",\n  \"budgetMin\": 5000,\n  \"budgetMax\": 10000\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/events",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "events"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "b507c293-11f8-488f-b26f-e7787d87467b",
+          "name": "delete-event",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA3MDY2LCJleHAiOjE3NjQxMTA2NjYsIm5iZiI6MTc2NDEwNzA2NiwianRpIjoiUGc1OUE5cFcxOWFtdlJEVyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.rZ9DKhpg8z7nOhk5G4IrMlYQKmO_UfJPp8YtJ9zyqHk",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/events/1",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "path": [
+                "api",
+                "events",
+                "1"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "86fc4485-208c-4eca-99bc-ae9c91b3d191",
+          "name": "get-event-by-id",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA2Njk3LCJleHAiOjE3NjQxMTAyOTcsIm5iZiI6MTc2NDEwNjY5NywianRpIjoiaXVzVzd3WWVGdjZaUkxzdSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gVXBkYXRlZCIsImVtYWlsIjoiam9obkBleGFtcGxlLmNvbSIsInJvbGUiOiJDdXN0b21lciJ9.yyEpfvVFRh_aDmFBF3fVx9SuaAAC_IIMUCFEhYcQrhY",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/events/1",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "path": [
+                "api",
+                "events",
+                "1"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "3946a2f0-18aa-465e-af4a-c322cbef20f2",
+          "name": "get-events",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA3MDY2LCJleHAiOjE3NjQxMTA2NjYsIm5iZiI6MTc2NDEwNzA2NiwianRpIjoiUGc1OUE5cFcxOWFtdlJEVyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.rZ9DKhpg8z7nOhk5G4IrMlYQKmO_UfJPp8YtJ9zyqHk",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/events/user/2",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "path": [
+                "api",
+                "events",
+                "user",
+                "2"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "2f79ac9d-b1ac-4925-a2a2-0a48bfba4f04",
+          "name": "get-vendor-events",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA2Njk3LCJleHAiOjE3NjQxMTAyOTcsIm5iZiI6MTc2NDEwNjY5NywianRpIjoiaXVzVzd3WWVGdjZaUkxzdSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gVXBkYXRlZCIsImVtYWlsIjoiam9obkBleGFtcGxlLmNvbSIsInJvbGUiOiJDdXN0b21lciJ9.yyEpfvVFRh_aDmFBF3fVx9SuaAAC_IIMUCFEhYcQrhY",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/events/vendor/1",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "path": [
+                "api",
+                "events",
+                "vendor",
+                "1"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "82f9b3d6-5d9e-40be-a893-c2ea61de0621",
+          "name": "update-event ",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA3MDY2LCJleHAiOjE3NjQxMTA2NjYsIm5iZiI6MTc2NDEwNzA2NiwianRpIjoiUGc1OUE5cFcxOWFtdlJEVyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.rZ9DKhpg8z7nOhk5G4IrMlYQKmO_UfJPp8YtJ9zyqHk",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"eventDate\": \"2025-12-26\",\n  \"description\": \"Updated wedding date\",\n  \"budgetMax\": 12000\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/events/1",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "path": [
+                "api",
+                "events",
+                "1"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        }
+      ],
+      "variable": []
+    },
+    {
+      "id": "aded25d0-3923-4e83-b92f-cba9113d762f",
+      "name": "Message-Operation",
+      "item": [
+        {
+          "id": "6fe4f947-9131-4732-98a0-8a4f95478ef1",
+          "name": "get-all-chats",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA0NjgxLCJleHAiOjE3NjQxMDgyODEsIm5iZiI6MTc2NDEwNDY4MSwianRpIjoiT1MzY0FBUDg3blk5QTdtUSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.JGdjB4z7XQOPqEh5E4FCfIIhLRvWb2zr8ZSdpAenlf8",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/messages/conversation/2/1",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "messages",
+                "conversation",
+                "2",
+                "1"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "9d18bfbe-7ef9-482b-ab9c-453ba1d88380",
+          "name": "get-chat-user",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://app.requestly.io/echo",
+              "host": [
+                "app",
+                "requestly",
+                "io"
+              ],
+              "path": [
+                "echo"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "2f59d4ca-2a70-4a7d-a397-8a908be52a72",
+          "name": "message-send",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA0NjgxLCJleHAiOjE3NjQxMDgyODEsIm5iZiI6MTc2NDEwNDY4MSwianRpIjoiT1MzY0FBUDg3blk5QTdtUSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.JGdjB4z7XQOPqEh5E4FCfIIhLRvWb2zr8ZSdpAenlf8",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"senderId\": 2,\n  \"receiverId\": 1,\n  \"message\": \"Hello, I'm interested in your services!\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/messages/send",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "messages",
+                "send"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        }
+      ],
+      "variable": []
+    },
+    {
+      "id": "ee506007-7466-4730-a50b-54e8801f36be",
+      "name": "Notification",
+      "item": [
+        {
+          "id": "c4f7a20c-72aa-408d-adca-27f68c5041e1",
+          "name": "get-notification",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA3MDY2LCJleHAiOjE3NjQxMTA2NjYsIm5iZiI6MTc2NDEwNzA2NiwianRpIjoiUGc1OUE5cFcxOWFtdlJEVyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.rZ9DKhpg8z7nOhk5G4IrMlYQKmO_UfJPp8YtJ9zyqHk",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/notifications/2",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "path": [
+                "api",
+                "notifications",
+                "2"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        }
+      ],
+      "variable": []
+    },
+    {
+      "id": "ab5f292e-eb4f-48d8-827c-66bd2aadebbd",
+      "name": "Review-Endpoints",
+      "item": [
+        {
+          "id": "3b0d6db8-83c6-4d07-b53b-4759bbff19e9",
+          "name": "get-reviews-by-id",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "",
+                "value": "",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/reviews/event/1",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "reviews",
+                "event",
+                "1"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "ebb1209f-cd2b-4a7b-8d3d-0758fc2b0cab",
+          "name": "save-review",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA3MDY2LCJleHAiOjE3NjQxMTA2NjYsIm5iZiI6MTc2NDEwNzA2NiwianRpIjoiUGc1OUE5cFcxOWFtdlJEVyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.rZ9DKhpg8z7nOhk5G4IrMlYQKmO_UfJPp8YtJ9zyqHk",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"eventId\": 1,\n  \"rating\": 4.5,\n  \"title\": \"Great service!\",\n  \"comment\": \"The catering was excellent and professional.\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/reviews",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "path": [
+                "api",
+                "reviews"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        }
+      ],
+      "variable": []
+    },
+    {
+      "id": "37aee0e2-86d2-4713-a56a-ac4979660fa4",
+      "name": "Vendor-Operation",
+      "item": [
+        {
+          "id": "a327b465-0132-420f-bb86-89d2cb71e0e7",
+          "name": "add-favorite-vendor",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA0NjgxLCJleHAiOjE3NjQxMDgyODEsIm5iZiI6MTc2NDEwNDY4MSwianRpIjoiT1MzY0FBUDg3blk5QTdtUSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.JGdjB4z7XQOPqEh5E4FCfIIhLRvWb2zr8ZSdpAenlf8",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": 2,\n  \"vendorId\": 1\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/Vendors/favorite",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "Vendors",
+                "favorite"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "29f31847-63b8-4caa-82de-b9f94b2e9109",
+          "name": "create-vendor",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTAzNTYyLCJleHAiOjE3NjQxMDcxNjIsIm5iZiI6MTc2NDEwMzU2MiwianRpIjoiTGFYY0QyMEx3cVBzN1BMYiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwicm9sZSI6IkN1c3RvbWVyIn0.3sqe9N-yzeeGXsoB5-LRaLHjDkHexq0s1Lm1ka8ntRI",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"businessName\": \"Catering Co\",\n  \"contactName\": \"Jane Smith\",\n  \"businessPhone\": \"555-1234\",\n  \"businessEmail\": \"info@cateringco.com\",\n  \"businessAddress\": \"789 Business Ave\",\n  \"serviceArea\": \"Toronto\",\n  \"serviceType\": \"Catering\",\n  \"cuisineStyle\": \"Italian\",\n  \"description\": \"Premium catering services\",\n  \"website\": \"https://cateringco.com\",\n  \"instagram\": \"@cateringco\",\n  \"facebook\": \"cateringco\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/Vendors/byUser/1",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "Vendors",
+                "byUser",
+                "1"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "671b15c0-55ff-43a9-ba35-7019283f6b66",
+          "name": "delete-favorites",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTA0NjgxLCJleHAiOjE3NjQxMDgyODEsIm5iZiI6MTc2NDEwNDY4MSwianRpIjoiT1MzY0FBUDg3blk5QTdtUSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoyLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lMiIsImVtYWlsIjoiam9oMm5AZXhhbXBsZS5jb20iLCJyb2xlIjoiQ3VzdG9tZXIifQ.JGdjB4z7XQOPqEh5E4FCfIIhLRvWb2zr8ZSdpAenlf8",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/Vendors/favorite",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "Vendors",
+                "favorite"
+              ],
+              "protocol": "http",
+              "query": [
+                {
+                  "key": "userId",
+                  "value": "1",
+                  "disabled": false
+                },
+                {
+                  "key": "vendorId1",
+                  "value": "",
+                  "disabled": false
+                }
+              ]
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "0c8ec60b-6f6d-41fe-93b1-2ed7bd5b6952",
+          "name": "delete-vendor",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTAzNTYyLCJleHAiOjE3NjQxMDcxNjIsIm5iZiI6MTc2NDEwMzU2MiwianRpIjoiTGFYY0QyMEx3cVBzN1BMYiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwicm9sZSI6IkN1c3RvbWVyIn0.3sqe9N-yzeeGXsoB5-LRaLHjDkHexq0s1Lm1ka8ntRI",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/Vendors/1",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "Vendors",
+                "1"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "af7c4086-1adb-4923-b4bb-1e50c23dbbf6",
+          "name": "search-vendor",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTAzNTYyLCJleHAiOjE3NjQxMDcxNjIsIm5iZiI6MTc2NDEwMzU2MiwianRpIjoiTGFYY0QyMEx3cVBzN1BMYiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwicm9sZSI6IkN1c3RvbWVyIn0.3sqe9N-yzeeGXsoB5-LRaLHjDkHexq0s1Lm1ka8ntRI",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/Vendors/searchall",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "path": [
+                "api",
+                "Vendors",
+                "searchall"
+              ],
+              "protocol": "http",
+              "query": [
+                {
+                  "key": "city",
+                  "value": "Toronto",
+                  "disabled": false
+                }
+              ]
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "d75ab6ff-71ee-415d-857f-bea96d709dbc",
+          "name": "update-vendor",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL1VzZXJzL2xvZ2luIiwiaWF0IjoxNzY0MTAzNTYyLCJleHAiOjE3NjQxMDcxNjIsIm5iZiI6MTc2NDEwMzU2MiwianRpIjoiTGFYY0QyMEx3cVBzN1BMYiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZWlkIjoxLCJ1bmlxdWVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huQGV4YW1wbGUuY29tIiwicm9sZSI6IkN1c3RvbWVyIn0.3sqe9N-yzeeGXsoB5-LRaLHjDkHexq0s1Lm1ka8ntRI",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"businessName\": \"Updated Catering Co\",\n  \"description\": \"New description\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/Vendors/1",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "Vendors",
+                "1"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        }
+      ],
+      "variable": []
+    }
+  ]
+}
