@@ -28,7 +28,7 @@ export default function CustomerDashboard() {
     <ProtectedRoute allowedRoles={['Customer']}>
       <div className="min-h-screen">
       {/* Header */}
-      <nav className="sticky top-0 z-50 backdrop-blur-lg bg-white/10 border-b border-white/20">
+      {/* <nav className="sticky top-0 z-50 backdrop-blur-lg bg-white/10 border-b border-white/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
@@ -38,7 +38,7 @@ export default function CustomerDashboard() {
               <span className="text-gray-300 hidden sm:inline">{user?.fullName}</span>
               {isVendor && (
                 <button
-                  onClick={() => router.push('/dashboard/vendor')}
+                  onClick={() => router.push('/hidden/dashboard/vendor')}
                   className="px-3 sm:px-4 py-2 rounded-lg bg-purple-500/20 hover:bg-purple-500/30 text-purple-200 border border-purple-500/50 transition-all flex items-center gap-2"
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,7 +56,7 @@ export default function CustomerDashboard() {
             </div>
           </div>
         </div>
-      </nav>
+      </nav> */}
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-8">

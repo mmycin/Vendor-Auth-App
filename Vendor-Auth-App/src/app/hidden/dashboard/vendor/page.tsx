@@ -27,7 +27,7 @@ export default function VendorDashboard() {
     <ProtectedRoute allowedRoles={['Vendor']}>
       <div className="min-h-screen">
       {/* Header */}
-      <nav className="sticky top-0 z-50 backdrop-blur-lg bg-white/10 border-b border-white/20">
+      {/* <nav className="sticky top-0 z-50 backdrop-blur-lg bg-white/10 border-b border-white/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
@@ -36,7 +36,7 @@ export default function VendorDashboard() {
             <div className="flex items-center space-x-4">
               <span className="text-gray-300 hidden sm:inline">{user?.fullName}</span>
               <button
-                onClick={() => router.push('/dashboard/customer')}
+                onClick={() => router.push('/hidden/dashboard/customer')}
                 className="px-3 sm:px-4 py-2 rounded-lg bg-blue-500/20 hover:bg-blue-500/30 text-blue-200 border border-blue-500/50 transition-all flex items-center gap-2"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -53,7 +53,7 @@ export default function VendorDashboard() {
             </div>
           </div>
         </div>
-      </nav>
+      </nav> */}
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-8">
@@ -132,7 +132,7 @@ export default function VendorDashboard() {
             <h3 className="text-2xl font-bold text-white mb-6">Quick Actions</h3>
             <div className="space-y-4">
               <button 
-                onClick={() => router.push('/hidden/dashboard/events')}
+                onClick={() => router.push('/hidden/dashboard/vendor/events')}
                 className="w-full flex items-center p-4 bg-pink-500/20 hover:bg-pink-500/30 rounded-lg border border-pink-500/50 transition-all group"
               >
                 <div className="bg-pink-500/30 p-3 rounded-lg mr-4">

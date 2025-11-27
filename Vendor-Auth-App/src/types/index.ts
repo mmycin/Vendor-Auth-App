@@ -39,16 +39,19 @@ export interface Vendor {
 // Event types
 export interface Event {
   id: number;
-  userId: number;
-  vendorId?: number;
-  title: string;
-  description: string;
+  user_id: number;
+  vendor_id?: number | null;
+  eventType: string;
   eventDate: string;
-  location: string;
-  budget?: number;
-  status: string;
+  description?: string;
+  dietaryRestrictions?: string;
+  budgetMin?: number;
+  budgetMax?: number;
+  status?: string;
   created_at?: string;
   updated_at?: string;
+  vendor?: Vendor;
+  user?: User;
 }
 
 // Message types
@@ -65,13 +68,17 @@ export interface Message {
 // Notification types
 export interface Notification {
   id: number;
-  userId: number;
+  user_id: number;
+  fullName: string;
+  eventType: string;
+  eventDate: string;
+  vendor_id: number;
+  businessName: string;
+  rating: number;
   title: string;
-  message: string;
-  type: string;
-  isRead: boolean;
-  created_at?: string;
-  updated_at?: string;
+  comment: string;
+  created_at: string;
+  isRead?: boolean;
 }
 
 // Review types
