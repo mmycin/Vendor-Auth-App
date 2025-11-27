@@ -5,6 +5,37 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @property int $id
+ * @property int $user_id
+ * @property string $businessName
+ * @property string|null $contactName
+ * @property string|null $businessPhone
+ * @property string|null $businessEmail
+ * @property string|null $businessAddress
+ * @property string|null $serviceArea
+ * @property string|null $serviceType
+ * @property string|null $cuisineStyle
+ * @property string|null $cuisineRegion
+ * @property string|null $dining
+ * @property string|null $dietaryType
+ * @property string|null $description
+ * @property string|null $imageUrl
+ * @property string|null $website
+ * @property string|null $instagram
+ * @property string|null $facebook
+ * @property string|null $linkedin
+ * @property string|null $offer
+ * @property \Illuminate\Support\Carbon|null $offerFrom
+ * @property \Illuminate\Support\Carbon|null $offerTo
+ * @property bool $featured
+ * @property bool $instantQuoteAvailable
+ * @property float $ratingAverage
+ * @property int $reviewCount
+ * @property int $listings
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ */
 class Vendor extends Model
 {
     use HasFactory;

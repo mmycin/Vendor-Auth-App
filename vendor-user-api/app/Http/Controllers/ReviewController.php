@@ -10,6 +10,12 @@ class ReviewController extends Controller
 {
 
 
+    /**
+     * Get review by event ID.
+     *
+     * @param int $eventId
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function getByEvent($eventId)
     {
         $review = Review::where('event_id', $eventId)->first();
@@ -27,6 +33,17 @@ class ReviewController extends Controller
         return response()->json($review);
     }
 
+    /**
+     * Save (create or update) a review.
+     * 
+     * @bodyParam eventId int required Event ID. Example: 1
+     * @bodyParam rating float required Rating (1-5). Example: 4.5
+     * @bodyParam title string Review title. Example: Great service!
+     * @bodyParam comment string Review comment. Example: The catering was excellent.
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function save(Request $request)
     {
         $request->validate([

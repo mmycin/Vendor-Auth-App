@@ -12,6 +12,13 @@ class AuthController extends Controller
 {
 
 
+    /**
+     * Login user and return JWT token.
+     * 
+     * @unauthenticated
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function login(Request $request)
     {
         $request->validate([
@@ -41,6 +48,21 @@ class AuthController extends Controller
         ]);
     }
 
+    /**
+     * Register a new user.
+     * 
+     * @unauthenticated
+     * @bodyParam fullName string required Full name. Example: John Doe
+     * @bodyParam email string required Email address. Example: john@example.com
+     * @bodyParam password string required Password. Example: password123
+     * @bodyParam phone string Phone number. Example: 1234567890
+     * @bodyParam address string Address. Example: 123 Main St
+     * @bodyParam role string Role (Customer/Vendor). Example: Customer
+     * @bodyParam area string Area/Location. Example: Downtown
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function register(Request $request)
     {
         $request->validate([
@@ -73,6 +95,11 @@ class AuthController extends Controller
         ], 201);
     }
 
+    /**
+     * Logout the user (Invalidate the token).
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function logout()
     {
         auth('api')->logout();
@@ -82,6 +109,11 @@ class AuthController extends Controller
         ]);
     }
 
+    /**
+     * Refresh a token.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function refresh()
     {
         return response()->json([
@@ -94,6 +126,11 @@ class AuthController extends Controller
         ]);
     }
 
+    /**
+     * Get the authenticated User.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function me()
     {
         $user = auth('api')->user();

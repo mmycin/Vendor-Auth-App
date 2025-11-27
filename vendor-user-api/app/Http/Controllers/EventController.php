@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class EventController extends Controller
 {
+    /**
+     * Get all events.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function index()
     {
         // Get all events (admin only, or could be filtered by user)
@@ -14,6 +19,12 @@ class EventController extends Controller
         return response()->json($events);
     }
 
+    /**
+     * Get event by ID.
+     *
+     * @param int $id
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function show($id)
     {
         $event = Event::with(['user', 'vendor', 'review'])->find($id);
@@ -25,6 +36,12 @@ class EventController extends Controller
         return response()->json($event);
     }
 
+    /**
+     * Get events for a specific user.
+     *
+     * @param int $userId
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function getUserEvents($userId)
     {
         // Check authorization
@@ -44,6 +61,12 @@ class EventController extends Controller
         return response()->json($events);
     }
 
+    /**
+     * Get events for a specific vendor.
+     *
+     * @param int $vendorId
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function getVendorEvents($vendorId)
     {
         // Check if user owns this vendor
@@ -68,6 +91,21 @@ class EventController extends Controller
         return response()->json($events);
     }
 
+    /**
+     * Create a new event.
+     * 
+     * @bodyParam user_id int required User ID creating the event. Example: 1
+     * @bodyParam vendor_id int Vendor ID (optional). Example: 1
+     * @bodyParam eventType string required Type of event. Example: Wedding
+     * @bodyParam eventDate date required Date of event. Example: 2025-12-25
+     * @bodyParam description string Description of event. Example: Christmas wedding celebration
+     * @bodyParam dietaryRestrictions string Dietary restrictions. Example: Vegetarian options needed
+     * @bodyParam budgetMin float Minimum budget. Example: 5000
+     * @bodyParam budgetMax float Maximum budget. Example: 10000
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function store(Request $request)
     {
         if (!auth('api')->check()) {
@@ -98,6 +136,13 @@ class EventController extends Controller
         ], 201);
     }
 
+    /**
+     * Update an event.
+     *
+     * @param Request $request
+     * @param int $id
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function update(Request $request, $id)
     {
         $event = Event::find($id);
@@ -132,6 +177,12 @@ class EventController extends Controller
         ]);
     }
 
+    /**
+     * Delete an event.
+     *
+     * @param int $id
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function destroy($id)
     {
         $event = Event::find($id);

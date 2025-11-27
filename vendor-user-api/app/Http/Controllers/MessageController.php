@@ -12,6 +12,16 @@ class MessageController extends Controller
 {
 
 
+    /**
+     * Send a message.
+     * 
+     * @bodyParam senderId int required Sender User ID. Example: 1
+     * @bodyParam receiverId int required Receiver User ID. Example: 2
+     * @bodyParam message string required Message content. Example: Hello, I'm interested in your services!
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function send(Request $request)
     {
         $request->validate([
@@ -39,6 +49,12 @@ class MessageController extends Controller
         ]);
     }
 
+    /**
+     * Get users involved in chat with the given user.
+     *
+     * @param int $userId
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function getChatUsers($userId)
     {
         if (auth()->id() != $userId) {
@@ -64,6 +80,13 @@ class MessageController extends Controller
         return response()->json($users);
     }
 
+    /**
+     * Get conversation between two users.
+     *
+     * @param int $userId
+     * @param int $otherUserId
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function getConversation($userId, $otherUserId)
     {
         if (auth()->id() != $userId) {

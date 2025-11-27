@@ -10,11 +10,22 @@ class UserController extends Controller
 {
 
 
+    /**
+     * Get all users.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function index()
     {
         return response()->json(User::all());
     }
 
+    /**
+     * Get user by ID.
+     *
+     * @param int $id
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function show($id)
     {
         $user = User::find($id);
@@ -26,6 +37,17 @@ class UserController extends Controller
         return response()->json($user);
     }
 
+    /**
+     * Update a user profile.
+     * 
+     * @bodyParam fullName string Full name. Example: John Updated
+     * @bodyParam phone string Phone number. Example: 9876543210
+     * @bodyParam address string Address. Example: 456 New St
+     *
+     * @param Request $request
+     * @param int $id
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function update(Request $request, $id)
     {
         $user = User::find($id);
@@ -60,6 +82,12 @@ class UserController extends Controller
         return response()->json($user); // 204 No Content is also valid, but .NET returns NoContent()
     }
 
+    /**
+     * Delete a user.
+     *
+     * @param int $id
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function destroy($id)
     {
         $user = User::find($id);
